@@ -27,12 +27,14 @@ The Telegram Bot provides a chat-like interface for students to check for seat v
 A Mobile Application will share a common database with the Telegram Bot and provide the same functionality with a traditional non-chat-based interface. 
 
 The Telegram bot has limited features (cannot display real-time seat map) due to limited screen space. Hence the Mobile Application will have the following added features:
-View and navigate the floor plans of the libraries 
-Real-time seat map to find vacant seats
 
-Suggest study places according to your needs. E.g. Charging ports/ Allow discussions/ Air-Conditioned
+- View and navigate the floor plans of the libraries 
 
-Find other places such as Cafes or Open Spaces and benches to study.
+- Real-time seat map to find vacant seats
+
+- Suggest study places according to your needs. E.g. Charging ports/ Allow discussions/ Air-Conditioned
+
+- Find other places such as Cafes or Open Spaces and benches to study.
 
 
 ## Links for flutter
