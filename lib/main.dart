@@ -37,7 +37,7 @@ class StartWidget extends StatelessWidget {
       body: new TabBarView(children: <Widget>[
         new Text ("First widget"),
         new Text ("Second widget"),
-        new ListView.builder(itemBuilder: null),
+        new Text ("Third widget"),
       ])
       )
 
