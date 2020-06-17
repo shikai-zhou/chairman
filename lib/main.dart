@@ -42,7 +42,7 @@ class StartWidget extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => SecondRoute()),
+                  MaterialPageRoute(builder: (context) => CenLibRoute()),
                   );
 
               },
@@ -52,10 +52,19 @@ class StartWidget extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ThirdRoute())
+                  MaterialPageRoute(builder: (context) => SciLibRoute())
                   );
               }
             ),
+            ListTile(
+              title: Text('Business Library'),
+            ),
+            ListTile(
+              title: Text('Medicine Library')
+            ),
+            ListTile(
+              title: Text('Law Library')
+            )
          ],
         ),
         new Text ("Second widget"),
@@ -69,12 +78,12 @@ class StartWidget extends StatelessWidget {
 }
 }
 //TODO: implement library page interface
-class SecondRoute extends StatelessWidget {
+class CenLibRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Second Route"),
+        title: Text("Central Library"),
       ),
       body: Center(
         child: RaisedButton(
@@ -87,12 +96,12 @@ class SecondRoute extends StatelessWidget {
     );
   }
 }
-class ThirdRoute extends StatelessWidget {
+class SciLibRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Third Route"),
+        title: Text("Science Library"),
       ),
       body: Center(
         child: RaisedButton(
