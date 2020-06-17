@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Startup Name Generator',
+      title: 'The Chairman',
       home: StartWidget(),
     );
   }
@@ -35,7 +35,29 @@ class StartWidget extends StatelessWidget {
         ), 
       ),
       body: new TabBarView(children: <Widget>[
-        new Text ("First widget"),
+        ListView(
+          children: <Widget>[
+            ListTile(
+              title: Text('Central Library'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SecondRoute()),
+                  );
+
+              },
+            ),
+            ListTile(
+              title: Text('Science Library'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ThirdRoute())
+                  );
+              }
+            ),
+         ],
+        ),
         new Text ("Second widget"),
         new Text ("Third widget"),
       ])
@@ -45,8 +67,44 @@ class StartWidget extends StatelessWidget {
 
     );
 }
-  
-           
+}
+//TODO: implement library page interface
+class SecondRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Second Route"),
+      ),
+      body: Center(
+        child: RaisedButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Text('Go back!'),
+        ),
+      ),
+    );
+  }
+}
+class ThirdRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Third Route"),
+      ),
+      body: Center(
+        child: RaisedButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Text('Go back!'),
+        ),
+      ),
+    );
+  }
+}
   // #enddocregion RWS-var
 
 
@@ -62,5 +120,6 @@ class StartWidget extends StatelessWidget {
   }*/
   // #enddocregion RWS-build
   // #docregion RWS-var
-}
+
+
 // #enddocregion RWS-var
