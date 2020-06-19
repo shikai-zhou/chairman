@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:426849913853:android:cab7ebceb18ab5040ae794",
+        "mobilesdk_app_id": "1:426849913853:android:3e23c7587c032dbc0ae794",
         "android_client_info": {
-          "package_name": "com.team101.chairman"
+          "package_name": "com.example.chairman"
         }
       },
       "oauth_client": [

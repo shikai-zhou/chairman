@@ -30,7 +30,7 @@ dependencies:
   # Add the dependency for the FlutterFire plugin for Google Analytics
   firebase_analytics: ^5.0.2
 
-  cloud_firestore:
+  cloud_firestore: ^0.13.6
 
 
   # The following adds the Cupertino Icons font to your application.
