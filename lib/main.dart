@@ -34,7 +34,8 @@ class StartWidget extends StatelessWidget {
           ],
         ), 
       ),
-      body: new TabBarView(children: <Widget>[
+      body: new TabBarView(
+        children: <Widget>[
         ListView(
           children: <Widget>[
             ListTile(
@@ -75,9 +76,10 @@ class StartWidget extends StatelessWidget {
       )
 
     );
-}
+  }
 }
 //TODO: implement library page interface
+//These are the navigation pages for the libraries
 class CenLibRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -86,11 +88,12 @@ class CenLibRoute extends StatelessWidget {
         title: Text("Central Library"),
       ),
       body: Center(
-        child: RaisedButton(
+        child: 
+          RaisedButton(
           onPressed: () {
             Navigator.pop(context);
           },
-          child: Text('Go back!'),
+          child: Text('Check in'),
         ),
       ),
     );
@@ -101,14 +104,14 @@ class SciLibRoute extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Science Library"),
+        title: Text('Science Library'),
       ),
       body: Center(
         child: RaisedButton(
           onPressed: () {
             Navigator.pop(context);
           },
-          child: Text('Go back!'),
+          child: Text('Check in'),
         ),
       ),
     );
