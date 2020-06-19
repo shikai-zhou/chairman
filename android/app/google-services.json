@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "426849913853",
+    "firebase_url": "https://chairman-d8ff6.firebaseio.com",
+    "project_id": "chairman-d8ff6",
+    "storage_bucket": "chairman-d8ff6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426849913853:android:cab7ebceb18ab5040ae794",
+        "android_client_info": {
+          "package_name": "com.team101.chairman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "426849913853-ndf9sr1273pcb0h3a9qaojbsngbv52dd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBRL1kIHSfMfg3rQm-2RAyMvbADfoX-U8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "426849913853-ndf9sr1273pcb0h3a9qaojbsngbv52dd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
