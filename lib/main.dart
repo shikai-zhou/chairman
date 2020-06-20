@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -89,16 +90,38 @@ class CenLibRoute extends StatelessWidget {
       appBar: AppBar(
         title: Text("Central Library"),
       ),
-      body: Center(
-        child: 
-          RaisedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Text('Check in'),
-        ),
-      ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text('100/100 seats free', style: TextStyle(fontSize: 24)),
+          TextFormField(
+            decoration: const InputDecoration(
+              hintText: 'Enter your seat number',
+            ),
+            validator: (String value) {
+              if(value.isEmpty) {
+                return 'Please enter a seat number';
+              }
+              return null;
+            },
+          ),
+          Padding(
+          padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 16.0),
+          child: RaisedButton(
+            onPressed: () {
+              // Validate will return true if the form is valid, or false if
+              // the form is invalid.
+              //if (_formKey.currentState.validate()) {
+                // Process data.
+              //}
+            },
+            child: Text('Check in/ Check out'),
+            ),
+          )
+        ],
+      )
     );
+    
   }
 }
 class SciLibRoute extends StatelessWidget {
