@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:sqflite/sqflite.dart';
 
 void main() => runApp(MyApp());
 
@@ -48,7 +47,6 @@ class StartWidget extends StatelessWidget {
                   context,
                   MaterialPageRoute(builder: (context) => CenLibRoute()),
                   );
-
               },
             ),
             ListTile(
@@ -71,8 +69,8 @@ class StartWidget extends StatelessWidget {
             )
          ],
         ),
-        new Text ("Second widget"),
-        new Text ("Third widget"),
+        new Text ("Coming Soon"),
+        new Text ("Coming Soon"),
       ])
       )
 
@@ -81,7 +79,7 @@ class StartWidget extends StatelessWidget {
     );
   }
 }
-//TODO: implement library page interface
+//TODO: add firebase firestore database
 //These are the navigation pages for the libraries
 class CenLibRoute extends StatelessWidget {
   @override
