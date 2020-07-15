@@ -1,8 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:path/path.dart';
-import 'package:sqflite/sqflite.dart';
 import 'package:chairman/database_helper.dart';
+import 'package:chairman/mysqldb.dart';
 void main() => runApp(MyApp());
 
 // Model class for seat
@@ -223,6 +222,7 @@ class MyCustomFormState extends State<MyCustomForm> {
   final myController = TextEditingController();
   final dbHelper = DatabaseHelper.instance;
   int choice = 1;
+  int _seatstaken = 0;
   @override
   void dispose() {
     // Clean up the controller when the widget is disposed.
@@ -268,6 +268,9 @@ class MyCustomFormState extends State<MyCustomForm> {
               choice = int.tryParse(myController.text);
               if (choice == null) {choice = 1;}
               _update1(choice);
+              setState(() {
+                _seatstaken++;
+              }); //changes state for widget to rebuild
               WidgetsBinding.instance.addPostFrameCallback(
               (_) => myController.clear());
             },
@@ -289,6 +292,9 @@ class MyCustomFormState extends State<MyCustomForm> {
               if (choice == null) {choice = 1;}
               //_update();
               _update2(choice);
+              setState(() {
+                _seatstaken--;
+              });//changes state for widget to rebuild
             },
             child: Text('Check out'),
             ),
