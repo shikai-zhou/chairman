@@ -1,7 +1,7 @@
 # Chairman
 
 ## About
-The Chairman is a mobile app that helps you to find free seats in libraries and study places.
+The Chairman is a mobile app and telegram bot that helps you to find free seats in libraries and study places.
 
 ## Motivation 
 
@@ -36,12 +36,14 @@ The Telegram bot has limited features (cannot display real-time seat map) due to
 
 - Find other places such as Cafes or Open Spaces and benches to study.
 
+## Tech Stack
+- Flutter
+- Dart
+- SQLite
 
 ## Links for flutter
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
+A few resources for Flutter:
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
