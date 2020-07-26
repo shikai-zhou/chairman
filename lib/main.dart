@@ -122,7 +122,10 @@ final dbHelper = DatabaseHelper.instance;
             },
             child: Text('Reset'),
             ),
-          )
+            
+          ),
+          new Image.asset("assets/images/Central_L1_floorplan.jpg"),
+          //new Image.asset("assets/images/Central_L2_floorplan.jpg"),
         ],
       )
     );
